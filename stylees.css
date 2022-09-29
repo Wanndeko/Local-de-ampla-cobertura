@@ -39,24 +39,26 @@
 }
 
 .img-were {
-    width: 595.18px;
-    height: 500px;
-    margin-top: 163px;
-    margin-left: 121px;
+    width: 550.18px;
+    height: 450px;
+    margin-top: 85px;
+    margin-left: 109px;
     display: inline-block;
+    position: absolute;
 
 }
 
 h1 {
     font-weight: 700;
-    font-size: 62px;
-    line-height: 82px;
-    letter-spacing: 0.596154px;
+    font-size: 49px;
+    line-height: 70px;
+    letter-spacing: -1.403846px;
     color: #161A49;
     width: 582px;
     height: 164px;
-    margin-top: 274px;
-
+    margin-top: 77px;
+    margin-left:599px;
+    position:absolute;
 }
 
 
@@ -68,8 +70,9 @@ p {
     color: #4B505A;
     width: 493px;
     height: 99px;
-    margin-top: 47px;
+    margin-top: 278px;
     margin-bottom: 55px;
+    margin-left: 594px; 
 }
 
 
@@ -86,6 +89,7 @@ section {
     letter-spacing: 1px;
     color: #6FBF44;
     cursor: pointer;
+    margin-left: 609px;
 
 }
 
