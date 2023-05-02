@@ -10,6 +10,8 @@
 
 }
 
+/* estilização header  */
+
 .link-header {
     font-weight: 400;
     font-size: 14px;
@@ -18,8 +20,29 @@
     letter-spacing: 0.875px;
     text-align: center;
     cursor: pointer;
-    margin-top: 47px;
+    margin-top: 40px;
     margin-left: 42px;
+    position: relative;
+    
+}
+
+.link-header::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 80%;
+    height: 1px;
+    background-color:#6FBF44;
+    transform: scaleX(0);
+    transform-origin:left ;
+    transition: ease .4s;
+
+}
+
+.link-header:hover::after{
+transform: scaleX(1);
 }
 
 .button-header {
@@ -27,7 +50,7 @@
     border: 1px solid #4CB538;
     border-radius: 6px;
     width: 124px;
-    height: 51px;
+    height: 35px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -35,52 +58,60 @@
     cursor: pointer;
     margin-top: 32px;
     margin-left: 32px;
+    border: none;
+    transition: ease .5s;
+
+}
+
+.button-header:hover{
+    transform: scale3d(1.3, 1.3, 1);
+}
+
+.button-header:active{
+    background: #2e7421;
+}
+
+/* fim header */
+
+main{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 25px;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
 
 }
 
 .img-were {
-    width: 550.18px;
-    height: 450px;
-    margin-top: 85px;
-    margin-left: 109px;
-    display: inline-block;
-    position: absolute;
-
+    width: 100%;
 }
 
 h1 {
     font-weight: 700;
     font-size: 49px;
-    line-height: 70px;
+    line-height: 60px;
     letter-spacing: -1.403846px;
     color: #161A49;
     width: 582px;
-    height: 164px;
-    margin-top: 77px;
-    margin-left:599px;
-    position:absolute;
 }
 
 
 p {
     font-weight: 400;
     font-size: 18px;
-    line-height: 33px;
+    line-height: 25px;
     letter-spacing: 0.5px;
     color: #4B505A;
-    width: 493px;
-    height: 99px;
-    margin-top: 278px;
-    margin-bottom: 55px;
-    margin-left: 594px; 
 }
 
 
-section {
-    display: inline-block;
-    margin-left: 84.96px;
-
-}
 
 .link-main {
     font-weight: 500;
@@ -89,8 +120,66 @@ section {
     letter-spacing: 1px;
     color: #6FBF44;
     cursor: pointer;
-    margin-left: 609px;
+    position: relative;
 
+}
+
+.link-main::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 16%;
+    height: 1px;
+    background-color:#6FBF44;
+    transform: scaleX(0);
+    transform-origin:left ;
+    transition: ease .4s;
+
+}
+
+.link-main:hover::after{
+    transform: scaleX(1);
+    }
+
+
+@media screen and (max-width: 1200px){
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        padding: 25px;
+        width: 100%;
+    }
+
+    .img-were {
+        width: 60%;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 49px;
+        line-height: 60px;
+        letter-spacing: -1.403846px;
+        color: #161A49;
+        width: 582px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 15px;
+        width: 100%;
+        text-align: center;
+    
+    }
+
+
+    
 }
 
 
@@ -98,7 +187,6 @@ section {
 
     section {
 
-        height: 50%;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -106,12 +194,7 @@ section {
     }
 
     .img-were{
-
         width: 100%;
-        display: block;
-        position:absolute;
-        height: auto;
-        margin: 490px 39px 22px 1px;
         padding: 39px;
 
     }
@@ -124,19 +207,12 @@ section {
         font-size: 30px;
         line-height: 30px;
         width: auto;
-        text-align: center;
-        margin: 124px 55px 0 57px;
-        position: relative;
     }
 
     p{
         font-size: 18px;
         line-height: 33px;
-        width: auto;
         text-align: center;
-        margin: -85px 43px 26px 43px;
-        position: relative;
-
     }
 
     .link-main{
@@ -144,9 +220,6 @@ section {
         line-height: 27px;
         width: auto;
         text-align: center;
-        margin: 26px 1px 59px 139px;
-        position: relative;
-        top: 129px;
     }
 
     .button-header{
