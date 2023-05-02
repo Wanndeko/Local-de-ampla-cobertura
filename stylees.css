@@ -73,6 +73,8 @@ transform: scaleX(1);
 
 /* fim header */
 
+/* conteudo principal */
+
 main{
     display: flex;
     align-items: center;
@@ -112,7 +114,6 @@ p {
 }
 
 
-
 .link-main {
     font-weight: 500;
     font-size: 18px;
@@ -143,7 +144,7 @@ p {
     transform: scaleX(1);
     }
 
-
+/* fim conteudo principal */
 @media screen and (max-width: 1200px){
     main{
         display: flex;
